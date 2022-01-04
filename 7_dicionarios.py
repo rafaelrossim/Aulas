@@ -30,4 +30,4 @@ print(f'Encontrei o pais {pais}')
 
 receita = {'Jan':100, 'Fev':200, 'Mar':300}
 print(receita)
-print(type(receita))
+
