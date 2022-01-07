@@ -1,4 +1,3 @@
-'''
 #acessando informações do dicionario
 
 receita = {'Jan':100, 'Fev':200, 'Mar':300}
@@ -20,7 +19,7 @@ print(f'O tipo teste agora é {type(teste)} com o valor {teste}')
 teste = 'Rafael Rossim'
 
 print(f'O tipo teste atualizado é {type(teste)} com o valor {teste}')
-'
+
 paises = {'BR': 'Brasil', 'EUA': 'Estados Unidos', 'PY': 'Paraguai'}
 
 #O 'não encotrado é usado quando não localiza a chave 'BR' no dict
@@ -97,7 +96,6 @@ print(f'copia {novo}')
 novo['d'] = 4
 print(f'original {d}')
 print(f'atualizado {novo}')
-'''
 
 #neste caso criei um dict com valor default igual para todos
 usuario = {}.fromkeys(['nome', 'pontos', 'email', 'profile'], 'desconhecido')
