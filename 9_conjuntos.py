@@ -75,7 +75,6 @@ print(len(cidades)) #descobrindo quantas pessoas visitaram
 #descobrindo quantas cidades únicas contém na lista
 cid_unicas = set(cidades)
 print(f'Na lista contem {(len(cid_unicas))} Cidades únicas, são elas: {cid_unicas}')
-
 """
 
 
