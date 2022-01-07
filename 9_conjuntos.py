@@ -33,8 +33,10 @@ print(type(s))
 
 #convertendo uma lista em um conjunto(set)
 lista = [1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11]
+
 print(lista)
 print(type(lista))
+
 conv = set(lista)
 print(conv)
 print(type(conv))
@@ -45,9 +47,6 @@ if 3 in s:
     print('Tem o 3')
 else:
     print('Não tem o 3')
-"""
-
-#gerando diferentes conjuntos
 
 #listas aceitam valores duplicados por isso 19 elementos
 lista = [1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11]
@@ -61,6 +60,23 @@ print(f'tupla {tupla} com {len(tupla)} elementos')
 dicionario = {}.fromkeys([1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11], 'dict')
 print(f'dicionário = {dicionario} com {len(dicionario)} elementos')
 
-#conjunto não aceitam valores duplicados por isso 11 elementos
+#conjunto não aceitam valores duplicados por isso 11 elementos e é ordenado de uma foma própria
 conjunto = {1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11}
 print(f'Conjunto = {conjunto} com {len(conjunto)} elementos')
+
+#exempo: criar uma lista de visitantes de um museu
+
+#foi criada a lista abaixo porque podem ter visitantes da mesmam cidade, ou seja, valores repetidos
+cidades = ['Belo Horizonte', 'São Paulo', 'Campo Grande', 'Cuiaba', 'Campo Grande', 'São Paulo', 'Cuiaba']
+
+print(cidades)
+print(len(cidades)) #descobrindo quantas pessoas visitaram
+
+#descobrindo quantas cidades únicas contém na lista
+cid_unicas = set(cidades)
+print(f'Na lista contem {(len(cid_unicas))} Cidades únicas, são elas: {cid_unicas}')
+
+"""
+
+
+
