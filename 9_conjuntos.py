@@ -16,6 +16,7 @@ Os Conjuntos (sets) são referenciados em Python com chaves {}
 Diferença entre Conjuntos(sets) e Mapas(dict)
 - Um dict tem chave/valor;
 - Um set tem apenas valor;
+"""
 
 #Definindo um conjunto(set)
 
@@ -65,7 +66,6 @@ conjunto = {1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11}
 print(f'Conjunto = {conjunto} com {len(conjunto)} elementos')
 
 #exempo: criar uma lista de visitantes de um museu
-
 #foi criada a lista abaixo porque podem ter visitantes da mesmam cidade, ou seja, valores repetidos
 cidades = ['Belo Horizonte', 'São Paulo', 'Campo Grande', 'Cuiaba', 'Campo Grande', 'São Paulo', 'Cuiaba']
 
@@ -88,5 +88,55 @@ print(s)
 #forma2
 ret =s.discard(7) #este metódo não retorna valor e se não encontrar o valor a ser deletado, NÃO acontecerá nenhum erro 
 print(ret)
-"""
 
+#deep copy
+novo = s.copy()
+novo.add(12) #nesta opção a alteração é feita apenas em um conunto e o origina se mantém
+
+print('deep copy')
+print(f's = {s}')
+print(f'novo = {novo}')
+
+#shallow copy
+novo = s
+novo.add(12) #nesta opção a alteração é feita nos dois conjuntos, inclusive no original!
+
+print('shallow copy')
+print(f's = {s}')
+print(f'novo = {novo}')
+
+#apagando todos os itens do conjunto
+s = {1,2,3,4,5,6,7,7,7,8,9,2,3,4,5,10,10,10,11}
+print(f' Original = {s}')
+
+s.clear()
+print(f' Apagado = {s}')
+
+#imagine que temos dois conjuntos, um contendo alunos de python e outro contendo alunos de Java
+estudades_python = {'Marcos', 'Patrícia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
+estudades_java = {'Fernando', 'Gustavo', 'Julia', 'Ana', 'Patrícia'}
+
+#precisamos gerar um conjunto de estudantes únicos
+#forma1 - union
+unicos1 = estudades_python.union(estudades_java)
+print(unicos1)
+
+#forma2 - pipe ('|')
+unicos2 = estudades_python | estudades_java
+print(unicos2)
+
+#precisamos gerar um conjunto de estudantes que estão nos dois cursos
+#forma1 - intersection
+ambos1 = estudades_python.intersection(estudades_java)
+print(ambos1)
+
+#forma2 - '&'
+ambos2 = estudades_python & estudades_java
+print(ambos2)
+
+#precisamos saber alunos que NÃO estão nos dois cursos simultâneamente, ou seja, precisamos saber somente a diferença
+so_py = estudades_python.difference(estudades_java)
+print(f'Apenas Python = {so_py}')
+
+so_jv = estudades_java.difference(estudades_python)
+print(f'Apenas Java = {so_jv}')
