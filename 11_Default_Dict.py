@@ -7,7 +7,7 @@ podendo utilizar um lambda para isso. Este valor será utilizado sempre que não
 um valor definido. Caso tentemos acessar uma chave que não existe, essa chave será
 criada e o valor default será atribuido
 
-doc = https://docs.python.org/3/library/collections.html#collections.defaultdict
+docs = https://docs.python.org/3/library/collections.html#collections.defaultdict
 """
 
 #fazendo import
