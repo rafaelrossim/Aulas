@@ -75,7 +75,18 @@ print(len(cidades)) #descobrindo quantas pessoas visitaram
 #descobrindo quantas cidades únicas contém na lista
 cid_unicas = set(cidades)
 print(f'Na lista contem {(len(cid_unicas))} Cidades únicas, são elas: {cid_unicas}')
+
+#adicionando valores no conjunto
+s.add(12)
+print(s)
+
+#remover um valor de um conjunto
+#forma1
+s.remove(7) #este metódo não retorna valor e se não encontrar o valor a ser deletado, acontecerá o erro KeyError
+print(s)
+
+#forma2
+ret =s.discard(7) #este metódo não retorna valor e se não encontrar o valor a ser deletado, NÃO acontecerá nenhum erro 
+print(ret)
 """
-
-
 
