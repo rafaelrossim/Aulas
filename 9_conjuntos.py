@@ -140,3 +140,10 @@ print(f'Apenas Python = {so_py}')
 
 so_jv = estudades_java.difference(estudades_python)
 print(f'Apenas Java = {so_jv}')
+
+#soma, min, max e tamnho dos conjuntos
+#isso somente funciona caso os valores sejam int ou float
+print(sum(s))
+print(min(s))
+print(max(s))
+print(len(s))

@@ -1,6 +1,6 @@
 #acessando informações do dicionario
-
 receita = {'Jan':100, 'Fev':200, 'Mar':300}
+paises = {'BR': 'Brasil', 'EUA': 'Estados Unidos', 'PY': 'Paraguai'}
 
 #forma 1
 print(paises['BR'])
@@ -20,9 +20,7 @@ teste = 'Rafael Rossim'
 
 print(f'O tipo teste atualizado é {type(teste)} com o valor {teste}')
 
-paises = {'BR': 'Brasil', 'EUA': 'Estados Unidos', 'PY': 'Paraguai'}
-
-#O 'não encotrado é usado quando não localiza a chave 'BR' no dict
+#O 'não encotrado" é usado quando não localiza a chave 'BR' no dict
 pais = paises.get('BR', 'Não encontrado')
 
 print(f'Encontrei o pais {pais}')
@@ -31,7 +29,6 @@ print(receita)
 print(type(receita))
 
 #adicionando informações no dict
-
 #forma1, mais comum
 receita['Abr'] = 400
 print(receita)
@@ -46,7 +43,6 @@ receita.update({'Mai': 500})
 print(receita)
 
 #atualizando valores existentes
-
 #forma1
 receita['Mai'] = 550
 print(receita)
@@ -56,18 +52,14 @@ receita.update({'Mai':600})
 print(receita)
 
 #deletando uma informação de um dicionario
-
 #forma1, mais comum
-receita.pop('Mar')
-#ao removermos um obj, o valor do mesmo é retornado com default
+receita.pop('Mar') #ao removermos um obj, o valor do mesmo é retornado com default
 
 #forma2
-del receita['Fev']
+del receita['Fev'] #neste caso quando deleta o obj, não é retornado nenhum valor
 print(receita)
-#neste caso quando deleta o obj, não é retornado nenhum valor
 
 #carrindo de compras
-
 carrinho = []
 
 prod1 = {'nome': 'Playstation 4', 'quantidade' : 1, 'valor' : 2300.00}
@@ -79,16 +71,15 @@ carrinho.append(prod2)
 print(carrinho)
 
 #limpando todos os dados do dict
+d = dict(a=1, b=2, c=3)
 d.clear()
 print(d)
 
 #metódos de dict
-
 d = dict(a=1, b=2, c=3) #forma não usual de criar um dict
 print(f'original {d}')
 
 #copiando dados do dict
-
 #forma1
 novo = d.copy()
 print(f'copia {novo}')

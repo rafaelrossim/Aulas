@@ -1,8 +1,12 @@
+
+"""
+
+Dicionários são representados por {}
+interar sobre dict, ou seja loop sobre dict
+
+"""
+
 receita = {'Jan':100, 'Fev':250, 'Marc':400}
-
-#e dicionários são representados por {}
-#interar sobre dict, ou seja loop sobre dict
-
 print(receita)
 
 #modo1
