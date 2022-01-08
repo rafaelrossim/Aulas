@@ -3,6 +3,8 @@ Módulo collections = Counter (contador)
 
 Counter - Recebe um interável como parámetro e cria um objeto do tipo Collections Counter que é parecido com dicionário,
 contendo como chave, o elemento da lista passada como parâmetro e como valor, a quantidade de ocorrências desses elementos
+
+doc = https://docs.python.org/3/library/collections.html#collections.Counter
 """
 
 #realizando import 
