@@ -1,4 +1,3 @@
-"""
 #definindo uma função
 def hello():
     print("hello!!")
@@ -66,5 +65,3 @@ def joga_outra_moeda():
     return 'Coroa'
 
 print (joga_outra_moeda())
-"""
-
