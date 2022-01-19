@@ -1,4 +1,3 @@
-"""
 #definindo uma função
 def hello():
     print("hello!!")
@@ -66,16 +65,16 @@ def joga_outra_moeda():
     return 'Coroa'
 
 print (joga_outra_moeda())
-"""
 
-#funcoes com parametros
+# funcoes com parametros
 def quadrado(numero):
     return numero * numero
 
-print (quadrado(7))
-print (quadrado(5))
-print (quadrado(9))
+print(quadrado(7))
+print(quadrado(5))
+print(quadrado(9))
 
-#funcoes com mais de um parametro
+
+# funcoes com mais de um parametro
 def multiplica(num1, num2):
     return num1 * num2
