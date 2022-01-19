@@ -73,7 +73,7 @@ for indice, cor in enumerate(cores):
     print(indice,cor)
 
 # em qual indice da lista está o valor 4
-#print(lista1.index(4))
+print(lista1.index(4))
 
 # em qual indice da lista está o valor 4, começando pelo indice 1
 print(lista1.index(5, 1))
