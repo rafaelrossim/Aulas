@@ -1,4 +1,3 @@
-"""
 #definindo uma função
 def hello():
     print("hello!!")
@@ -101,7 +100,6 @@ print(mostra_informacao(instrutor=True))
 print(mostra_informacao('Rafael'))
 print(mostra_informacao(nome='Rafael'))
 
-"""
 
 #variaveis globais e locais
 
