@@ -79,8 +79,6 @@ print(quadrado(9))
 # funcoes com mais de um parametro
 def multiplica(num1, num2):
     return num1 * num2
-"""
-
 
 # funcoes com parametro padrao/opcional
 def exponencial(numero, potencia=2):  # ao informar o valor delfaut (=2) o parametro se torna opcional
@@ -89,3 +87,40 @@ def exponencial(numero, potencia=2):  # ao informar o valor delfaut (=2) o param
 
 print(exponencial(5))  # usando o valor opcional
 print(exponencial(5, 3))  # sobrescrevendo o valor opcional
+
+def mostra_informacao(nome='Rossim', instrutor=False):
+    if nome == 'Rossim' and instrutor:
+        return 'Bem vindo instrutor'
+    elif nome == 'Rossim':
+        return 'Eu pensei que você era instrutor'
+    return f'Olá {nome}'
+
+
+print(mostra_informacao())
+print(mostra_informacao(instrutor=True))
+print(mostra_informacao('Rafael'))
+print(mostra_informacao(nome='Rafael'))
+
+"""
+
+#variaveis globais e locais
+
+#exemplo 1
+intrutor = 'Rossim' # variavel global
+
+def aula():
+    Instrutor = 'Python' # neste caso estou apenas substituindo variavel global
+    return f'{Instrutor}'
+
+print(aula())
+
+#exemplo 2
+total = 0 # variavel global
+
+def incrementa():
+    global total # é necessário utilziar a variavel global pois irei fazer uma operação matematica.
+    total = total + 1
+    return total
+
+print(incrementa())
+
