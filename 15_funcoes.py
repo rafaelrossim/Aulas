@@ -1,3 +1,4 @@
+"""
 #definindo uma função
 def hello():
     print("hello!!")
@@ -122,3 +123,28 @@ def incrementa():
 
 print(incrementa())
 
+"""
+
+# entendendo args
+
+# exemplo1
+
+
+def soma_todos_numeros(n1, n2, n3):
+    return n1 + n2 + n3
+
+
+print(soma_todos_numeros(1, 2, 3))
+
+
+# refatorando o exemmplo1
+def soma_todos_numeros_ref(*args):
+    return sum(args)  # o retorno do args é sempre uma tupla, por isso usei o 'sum'
+
+
+# por utilizar o args como parametro da função, posso usar quantos argumentos for necessário
+print(soma_todos_numeros_ref())
+print(soma_todos_numeros_ref(1))
+print(soma_todos_numeros_ref(1, 2))
+print(soma_todos_numeros_ref(1, 2, 3))
+print(soma_todos_numeros_ref(1, 2, 3, 4))
