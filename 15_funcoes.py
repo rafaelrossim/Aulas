@@ -81,9 +81,11 @@ def multiplica(num1, num2):
     return num1 * num2
 """
 
-#funcoes com parametro padrao/opcional
-def exponencial(numero, potencia=2): #quando informei o valor default de um paramentro (potencia=2), ele já se torna um opcional
+
+# funcoes com parametro padrao/opcional
+def exponencial(numero, potencia=2):  # ao informar o valor delfaut (=2) o parametro se torna opcional
     return numero ** potencia
 
-print(exponencial(5)) #usando o valor opcional
-print(exponencial(5,3)) #sobrescrevendo o valor opcional  
+
+print(exponencial(5))  # usando o valor opcional
+print(exponencial(5, 3))  # sobrescrevendo o valor opcional
