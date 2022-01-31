@@ -1,3 +1,4 @@
+"""
 #definindo uma função
 def hello():
     print("hello!!")
@@ -78,3 +79,11 @@ print(quadrado(9))
 # funcoes com mais de um parametro
 def multiplica(num1, num2):
     return num1 * num2
+"""
+
+#funcoes com parametro padrao/opcional
+def exponencial(numero, potencia=2): #quando informei o valor default de um paramentro (potencia=2), ele já se torna um opcional
+    return numero ** potencia
+
+print(exponencial(5)) #usando o valor opcional
+print(exponencial(5,3)) #sobrescrevendo o valor opcional  
